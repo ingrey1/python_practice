@@ -11,6 +11,8 @@ def foo(array):
         product * array[i]
     print("sum {}, product {}".format(sum, product)) 
 
+numbers = [1, 2, 3]
+# foo(numbers)
 # O(N^2)
 
 
