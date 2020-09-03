@@ -1,5 +1,8 @@
 # https://www.coursera.org/learn/principles-of-computing-2/supplement/qDdHk/math-notes-on-trees
 
+
+# tree class implementation: http://www.codeskulptor.org/#poc_tree.py
+
 # rooted tree: collection of nodes and edges that can be organized recursively, as follows
     # tree:
       # root node
@@ -36,7 +39,7 @@ def leaf_count(root):
   if not root.left and not root.right: # tree with no children is a leaf
       return 1
   
-  return 1 + leaf_count(root.left) + leaf_count(root.right)
+  return leaf_count(root.left) + leaf_count(root.right)
 
 # the height of a tree is the longest sequence of edges from the root to a leaf
 def tree_height(root):
@@ -56,3 +59,4 @@ def tree_height(root):
   #  Binary trees: in which all internal nodes
      #  have exactly two nodes are called full binary trees.
      #  Full binary trees often arise in applications involving searching and sorting.
+
