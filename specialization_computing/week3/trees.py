@@ -2,6 +2,8 @@
 
 
 # tree class implementation: http://www.codeskulptor.org/#poc_tree.py
+# evaluate arithmetic expression recursively: http://www.codeskulptor.org/#poc_arith_expression.py
+# tic tac toe mini-max discussion: https://www.coursera.org/learn/principles-of-computing-2/supplement/445vX/math-notes-on-minimax
 
 # rooted tree: collection of nodes and edges that can be organized recursively, as follows
     # tree:
@@ -57,6 +59,17 @@ def tree_height(root):
 #  One particularly important class of trees are binary trees
   #  in which all nodes have two or fewer children.
   #  Binary trees: in which all internal nodes
-     #  have exactly two nodes are called full binary trees.
+     #  that have exactly two children are called full binary trees.
      #  Full binary trees often arise in applications involving searching and sorting.
+     # a perfect binary tree is one in which every leaf has the same depth
+     # perfect binary tree has number of leaves: n = 2 ^ h
+     # perfect binary tree has internal nodes: (2 ^ h) - 1
+     # perfect binary tree has total nodes: (2 ^ (h + 1)) - 1
+     # perfect binary tree has n nodes at height h: n = 2 ^ h 
+     # notes: http://www.mathcs.emory.edu/~cheung/Courses/171/Syllabus/9-BinTree/bin-tree.html
+
+# tree traversals:
+  # Pre-order traversals - process root, process left subtree, process right subtree
+  # Post-order traversals - process left subtree, process right subtree, process root
+  # In-order traversals - process left subtree, process root, process right subtree
 
