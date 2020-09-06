@@ -72,4 +72,9 @@ def tree_height(root):
   # Pre-order traversals - process root, process left subtree, process right subtree
   # Post-order traversals - process left subtree, process right subtree, process root
   # In-order traversals - process left subtree, process root, process right subtree
+# tree search:
+  # breadth-first search (BFS): explore all of neighboring nodes at current depth, before moving to next depth
+    # https://en.wikipedia.org/wiki/Breadth-first_search
+  # explore left node, then right node, then root - post-order traversal 
+  
 
