@@ -1,4 +1,4 @@
-# http://www.codeskulptor.org/#user47_GBrZgEOa2h_6.py
+# http://www.codeskulptor.org/#user47_GBrZgEOa2h_8.py
 
 """
 Mini-max Tic-Tac-Toe Player
@@ -39,8 +39,6 @@ def mm_move(board, player):
         
         score = mm_move(new_board, provided.switch_player(player))[0]
         
-        if score == SCORES[player]:
-            break
         
         if SCORES[player] == 1 and score >= my_move[0]:
             my_move = (score, move)
@@ -48,7 +46,8 @@ def mm_move(board, player):
             my_move = (score, move)
         
         # current score matches desires score (its a win), no need to consider more alternatives
-       
+        if score == SCORES[player]:
+            break 
         
     return my_move
 
@@ -62,4 +61,4 @@ def move_wrapper(board, player, trials):
     assert move[1] != (-1, -1), "returned illegal move (-1, -1)"
     return move[1]
 
-provided.play_game(move_wrapper, 1, False)        
+#provided.play_game(move_wrapper, 1, False)        
